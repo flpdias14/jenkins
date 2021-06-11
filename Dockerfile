@@ -1,14 +1,13 @@
 FROM debian:buster
 LABEL maintainer="Uname Research Group <flpdias14@gmail.com>"
-LABEL description="Based on Public Knowledge Project <marc.bria@gmail.com>"
+LABEL description="jenkins docker file"
 
 # Basic packages
 ENV PACKAGES \
         default-jdk 
     
 ENV BUILDERS \
-        wget \
-        ca-certificates 
+        wget
        
 
 RUN apt update -y && apt upgrade -y
